@@ -1,3 +1,9 @@
+/* ========================================
+   VÉRTICE EDITORIAL
+   VÉRTICE LOVE — VOLUME 01
+   DESIGN PREMIUM
+======================================== */
+
 :root {
   --brown: #35271f;
   --terracotta: #a66a4f;
@@ -24,11 +30,16 @@ body {
   line-height: 1.7;
 }
 
-h1, h2, h3, p {
+h1,
+h2,
+h3,
+p {
   margin-top: 0;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: "Playfair Display", serif;
   line-height: 1.2;
 }
@@ -41,6 +52,10 @@ a {
 button {
   font: inherit;
 }
+
+/* ========================================
+   CABEÇALHO
+======================================== */
 
 .header {
   min-height: 88px;
@@ -82,13 +97,17 @@ button {
   border: 1px solid var(--brown);
   padding: 10px 18px;
   font-size: 12px;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .header-button:hover {
   background: var(--brown);
   color: white;
 }
+
+/* ========================================
+   ESTRUTURA GERAL
+======================================== */
 
 .section-container {
   max-width: 1150px;
@@ -108,6 +127,10 @@ button {
   letter-spacing: 3px;
   margin-bottom: 24px;
 }
+
+/* ========================================
+   HERO
+======================================== */
 
 .hero {
   min-height: 680px;
@@ -149,10 +172,11 @@ button {
   padding: 16px 30px;
   border: none;
   cursor: pointer;
-  transition: .3s;
+  transition: 0.3s;
   font-size: 13px;
   font-weight: 700;
   letter-spacing: 1px;
+  text-align: center;
 }
 
 .btn-primary {
@@ -180,6 +204,10 @@ button {
   background: #e8ded0;
   padding: 35px;
 }
+
+/* ========================================
+   CAPA DO E-BOOK
+======================================== */
 
 .book {
   position: relative;
@@ -228,6 +256,10 @@ button {
   letter-spacing: 2px;
 }
 
+/* ========================================
+   INTRODUÇÃO
+======================================== */
+
 .intro {
   background: var(--white);
   text-align: center;
@@ -243,6 +275,10 @@ button {
   color: var(--muted);
   font-size: 16px;
 }
+
+/* ========================================
+   BENEFÍCIOS
+======================================== */
 
 .benefits {
   padding: 110px 0;
@@ -288,6 +324,10 @@ button {
   color: var(--muted);
 }
 
+/* ========================================
+   CONTEÚDO DO LIVRO
+======================================== */
+
 .contents {
   padding: 110px 0;
   background: var(--white);
@@ -318,6 +358,10 @@ button {
   font-weight: 700;
 }
 
+/* ========================================
+   BÔNUS
+======================================== */
+
 .bonus {
   padding: 110px 20px;
   background: var(--beige);
@@ -332,6 +376,10 @@ button {
   color: #5f5148;
 }
 
+/* ========================================
+   OFERTA DE LANÇAMENTO
+======================================== */
+
 .offer {
   padding: 110px 20px;
 }
@@ -345,29 +393,136 @@ button {
   text-align: center;
 }
 
+.offer-card .eyebrow {
+  color: var(--beige);
+}
+
 .offer-card h2 {
-  margin-bottom: 20px;
+  margin: 20px 0;
 }
 
 .offer-card > p {
   color: #d9c7b8;
 }
 
+/* SELO DE LANÇAMENTO */
+
+.offer-badge {
+  display: inline-block;
+  background: var(--caramel);
+  color: var(--brown);
+  padding: 10px 18px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  margin-bottom: 20px;
+}
+
+/* ========================================
+   PREÇO PROMOCIONAL
+======================================== */
+
 .price {
   margin: 35px 0;
 }
 
-.price small {
-  display: block;
+.old-price {
   color: var(--beige);
+  font-size: 18px;
+  margin-bottom: 8px;
 }
 
-.price strong {
+.old-price del {
+  opacity: 0.85;
+  text-decoration-thickness: 2px;
+}
+
+.new-price {
   display: block;
   font-family: "Playfair Display", serif;
-  font-size: 58px;
-  font-weight: 500;
+  font-size: clamp(54px, 8vw, 78px);
+  font-weight: 600;
+  line-height: 1.2;
+  color: #ffffff;
 }
+
+.discount-badge {
+  display: inline-block;
+  background: var(--terracotta);
+  color: white;
+  padding: 9px 20px;
+  font-size: 13px;
+  font-weight: 700;
+  margin-top: 18px;
+  letter-spacing: 1px;
+}
+
+.price-description {
+  font-size: 13px;
+  color: var(--beige);
+  margin-top: 18px;
+}
+
+/* ========================================
+   CONTADOR REGRESSIVO
+======================================== */
+
+.launch-countdown {
+  margin: 40px auto;
+  padding: 30px 20px;
+  background: #2b1e18;
+  border: 1px solid #5c4033;
+}
+
+.countdown-title {
+  color: var(--beige);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 22px;
+}
+
+.countdown {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.countdown-item {
+  min-width: 92px;
+  padding: 15px 12px;
+  background: #463126;
+  border: 1px solid #634637;
+}
+
+.countdown-item strong {
+  display: block;
+  font-family: "DM Sans", sans-serif;
+  font-size: 31px;
+  font-weight: 700;
+  line-height: 1.3;
+  color: #ffffff;
+}
+
+.countdown-item span {
+  display: block;
+  font-size: 10px;
+  color: var(--beige);
+  letter-spacing: 1px;
+  margin-top: 5px;
+}
+
+.countdown-description {
+  font-size: 12px;
+  color: var(--beige);
+  margin: 22px 0 0;
+}
+
+/* ========================================
+   BOTÃO DE COMPRA
+======================================== */
 
 .offer .btn-primary {
   background: var(--cream);
@@ -378,10 +533,34 @@ button {
   background: var(--beige);
 }
 
+.buy-button {
+  display: inline-flex;
+  width: 100%;
+  max-width: 440px;
+  text-align: center;
+  padding: 20px;
+}
+
 .payment-note {
   margin-top: 20px;
   font-size: 12px;
 }
+
+.offer-expired-message {
+  margin-top: 20px;
+  padding: 15px;
+  background: #463126;
+  color: var(--beige);
+  font-size: 13px;
+}
+
+.offer-expired-message[hidden] {
+  display: none;
+}
+
+/* ========================================
+   PERGUNTAS FREQUENTES
+======================================== */
 
 .faq {
   background: var(--white);
@@ -408,6 +587,10 @@ details p {
   font-size: 14px;
 }
 
+/* ========================================
+   RODAPÉ
+======================================== */
+
 .footer {
   background: var(--brown);
   color: var(--cream);
@@ -429,7 +612,12 @@ details p {
   color: var(--beige);
 }
 
+/* ========================================
+   RESPONSIVIDADE — TABLETS
+======================================== */
+
 @media (max-width: 900px) {
+
   .nav {
     display: none;
   }
@@ -461,7 +649,12 @@ details p {
   }
 }
 
+/* ========================================
+   RESPONSIVIDADE — CELULARES
+======================================== */
+
 @media (max-width: 560px) {
+
   .header {
     padding: 18px 5%;
   }
@@ -512,66 +705,38 @@ details p {
     padding: 45px 22px;
   }
 
-  .price strong {
-    font-size: 49px;
+  .new-price {
+    font-size: 54px;
+  }
+
+  .countdown {
+    gap: 8px;
+  }
+
+  .countdown-item {
+    min-width: 58px;
+    padding: 12px 8px;
+  }
+
+  .countdown-item strong {
+    font-size: 24px;
+  }
+
+  .countdown-item span {
+    font-size: 9px;
+  }
+
+  .launch-countdown {
+    padding: 25px 10px;
+  }
+
+  .buy-button {
+    font-size: 11px;
+    letter-spacing: 0.4px;
   }
 
   .footer {
     flex-direction: column;
     text-align: center;
   }
-}
-/* ========================================
-   PREÇO PROMOCIONAL — VÉRTICE EDITORIAL
-======================================== */
-
-.offer-badge {
-  display: inline-block;
-  background: #b88a60;
-  color: #35271f;
-  padding: 9px 18px;
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 1.5px;
-  margin-bottom: 25px;
-}
-
-.old-price {
-  color: #d9c7ad;
-  font-size: 18px;
-  margin-bottom: 8px;
-}
-
-.old-price del {
-  opacity: 0.85;
-}
-
-.new-price {
-  display: block;
-  font-family: "Playfair Display", serif;
-  font-size: clamp(54px, 8vw, 78px);
-  font-weight: 600;
-  line-height: 1.2;
-  color: #ffffff;
-}
-
-.discount-badge {
-  display: inline-block;
-  background: #a66a4f;
-  color: white;
-  padding: 7px 17px;
-  font-size: 12px;
-  font-weight: 700;
-  margin-top: 15px;
-}
-
-.price-description {
-  font-size: 13px;
-  color: #d9c7ad;
-  margin-top: 15px;
-}
-
-.buy-button {
-  width: 100%;
-  max-width: 420px;
 }
